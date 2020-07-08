@@ -311,7 +311,7 @@ body{
   height: 120rem;
   text-align: center;
   background-image: url("../img/architecture-2256489_1920.jpg");
-  height: 90vh;
+  height: 60rem;
   background-position: center center;
   background-size: cover;
 
@@ -320,16 +320,30 @@ body{
   justify-content: center;
 }
 
+@media (min-height: 720px) {
+  .hero
+  {
+    height: 90vh;
+  }
+}
+
 .presentation-card
 {
   /*max-height: 60rem;*/
   text-align: left;
   background-color: rgba(256, 256, 256, 0.8);
   border-radius: 1rem;
-  padding: 2.5rem;
-  max-width: 80rem;
+  padding: 2rem;
+  max-width: 90rem;
 }
 
+@media (min-width: 768px) {
+  .presentation-card
+  {
+    padding: 2.5rem;
+
+  }
+}
 
 
 @media (min-width: 768px) {
@@ -438,9 +452,15 @@ h1{
 /*Barra de navegación*/
 .navbar{
   background-color: #12436B;
-  height: 10vh;
+  height: 7rem;
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-height: 720px) {
+  .navbar{
+    height: 10vh;
+  }
 }
 
 .navbar a{
@@ -451,6 +471,7 @@ h1{
   font-size: 1.2rem;
   margin: auto;
   padding: 1rem 2rem;
+  transition: all 0.3s ease-in;
 }
 
 @media (min-width: 600px) {
@@ -473,3 +494,41 @@ h1{
   background-color: white;
   color:#12436B;
 }
+
+h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+}
+
+h3::after {
+  content: '';
+  margin: 0 auto;
+  background-image: url(../img/separador.png);
+  display: block;
+  height: 30px;
+  width: 100px;
+}
+
+/*Presnetacion*/
+.paragraph
+{
+  text-align: left;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 5rem;
+  }  
+}
+
+@media (min-width: 768px) {
+  .grid2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 5rem;
+  }  
+}
+
