@@ -278,6 +278,7 @@ html {
 
 img{
   max-width: 100% !important;
+  display: inline-block;
 }
 
 .seccion {
@@ -311,12 +312,12 @@ body{
 
 .presentation-card
 {
-
+  /*max-height: 60rem;*/
   text-align: left;
-  background-color: rgba(256, 256, 256, 0.6);
+  background-color: rgba(256, 256, 256, 0.8);
   border-radius: 1rem;
   padding: 2.5rem;
-  max-width: 100rem;
+  max-width: 80rem;
 }
 
 
@@ -328,39 +329,50 @@ body{
   }
 }
 
+
+
 .img-container{
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
-  
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .img-container{
-    width: 40%;
+    width: 50%;
+
   }
 }
 
 @media (min-width: 768px) {
   .img-container{
-    flex-basis: 50%;
+    width: 80%;
+
+  }
+}
+
+
+@media (min-width: 768px) {
+  .left-container{
+    flex-basis: calc(50% - 1rem);
     margin: 0 auto;
   }
 
   .data-container{
-    flex-basis: 50%;
+    flex-basis: calc(50% - 1rem);
   }
 }
 
 
 h1{
   margin: 1.5rem 0 0 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
   
 }
 
 .occupation{
   font-family: 'Oswald', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .data-container ul{
@@ -371,8 +383,16 @@ h1{
 {
   list-style:none;
   text-align: left;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+
+  .data-container ul li
+  {
+    line-height: 2;
+  }
 }
 
 .fa-whatsapp{
