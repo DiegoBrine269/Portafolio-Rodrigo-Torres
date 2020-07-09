@@ -290,6 +290,7 @@ img{
 }
 
 @media (min-width: 480px) {
+
   .seccion {
     width: 65%;
   }
@@ -318,6 +319,12 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 480px) {
+  .hero{
+    padding: 5rem 0;
+  }
 }
 
 @media (min-height: 720px) {
@@ -517,18 +524,11 @@ h3::after {
 }
 
 @media (min-width: 768px) {
-  .grid1{
+  .grid{
     display: grid;
     grid-template-columns: 60% 40%;
     grid-gap: 5rem;
   }  
 }
 
-@media (min-width: 768px) {
-  .grid2{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-gap: 5rem;
-  }  
-}
 
