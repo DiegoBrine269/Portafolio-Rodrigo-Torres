@@ -321,11 +321,10 @@ body{
   justify-content: center;
 }
 
-@media (min-width: 480px) {
-  .hero{
-    padding: 5rem 0;
-  }
+.hero{
+  padding: 5rem 0;
 }
+
 
 @media (min-height: 720px) {
   .hero
