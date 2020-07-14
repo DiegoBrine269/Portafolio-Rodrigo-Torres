@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -28,76 +30,89 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <header>
-    <div class="hero">
 
-      <div class="presentation-card seccion">
-
-        <div class="left-container">
-          <div class="img-container">
-            <img class="profile-photo" src="/img/rodrigo.PNG" alt="">
-          </div>
-        </div>
-
-        <div class="data-container">
-          <h1>RODRIGO TORRES</h1>
-          <h2 class="occupation">ARQUITECTO</h2>
-          <p class="introduction">Supervisor de Obra en Interiores y Exteriores con 4 años de experiencia en Seguimiento y control de obras del sector privado</p>
-          
-          <ul>
-            <li><i class="fab fa-whatsapp"></i> <span class="personal-data">56 2100 4417</span></li>
-            <li><i class="fas fa-envelope"></i> <span class="personal-data">rodrytorress@hotmail.com</span></li>
-            <li><i class="fab fa-facebook"></i> <span class="personal-data">Rodrigo Torres Mendoza</span></li>
-            <li><i class="fas fa-map-marker-alt"></i> <span class="personal-data">CDMX</span></li>
-          </ul>
-
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="index.html">Rodrigo Torres Mendoza</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Presentación <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#form-académica">Formación Académica</a>
+        <a class="nav-item nav-link" href="#proyectos">Mis Proyectos</a>
       </div>
     </div>
+  </nav>
 
-    <nav class="navbar">
-      <a href="#" class="button transparent">Presentación</a>
-      <a href="#" class="button transparent">Formación Académica</a>
-      <a href="#" class="button hollow">Proyectos</a>
-    </nav>
-  </header>
+  <div class="hero-image">
+    <div class="hero-text">
+      <img src="img/rodrigo.PNG" class="img-fluid animate__animated animate__fadeInLeft" alt="Responsive image" style="height: 300px;">
+      <h1 class="mb-2 animate__animated animate__backInUp">Rodrigo Torres Mendoza</h1>
+      <h2 class="h5 mb-3 animate__animated animate__backInUp">Arquitecto</h2>
+      <a class="btn btn-primary" href="#proyectos" style="font-size: 1.3rem;">Mis proyectos</a>
+    </div>
+  </div> 
+  
+  <div class="container mt-5">
+    <h3 class="h2">Sobre mí</h3>
+    <div class="row mt-4">
+      <div class="col-md text-center py-4">
+        <i class="iconos-presentacion bg-primary text-white mb-2 far fa-building"></i>
+        <p class="h4">Supervisor de obra</p>
+        <p>Soy supervisor de obra en interiores y exteriores, enfocado en la planeación, estudio, análisis, remodelación, edificación e interpretación de proyectos. </p>
+      </div>
 
-  <div class="introduction seccion">
-    <h3>SOBRE MÍ</h3>
-
-    <div class="grid">
-      <div>
-        <p class="paragraph">Soy supervisor de obra en interiores y exteriores, con 4 años de experiencia en seguimiento y control de obras del sector privado, enfocado en la planeación. estudio, análisis, e interpretación de proyectos, remodelación, edificación, instalaciones e infraestructura urbana, lectura de planos arquitectónicos, instalaciones, estructura e instalaciones. </p>
-        <p class="paragraph">Mis capacidades: Liderazgo y habilidad de trabajo en grupo, comunicación y dirección de personal a cargo. Énfasis al trabajo en campo para la materialización de proyectos en tiempo determinado.</p>
+      <div class="col-md text-center py-4">
+        <i class="iconos-presentacion bg-primary text-white mb-2 fas fa-star"></i>
+        <p class="h4">Experiencia</p>
+        <p>Tengo 4 años de experiencia dando seguimiento y control de obras del sector privado.</p>
       </div>
       
-      <img src="/img/edificios.jpg" alt="">
-    </div>
 
-    <h3>OBJETIVO PROFESIONAL</h3>
-
-    <div class="grid">
-      <div>
-        <p class="paragraph">Desempeñarme como profesionista a través de la experiencia y aprendizaje adquiridos para desarrollar proyectos de obra múltiples, cumplir con responsabilidades y liderazgo al programa definido, administrativo coordinado en control y supervisión de frentes de trabajo, consumando las especificaciones y conceptos asignados y así obtener un beneficio en particular ya sea empresarial o capital, esto sin dejar a un lado la normatividad y calidad vigentes aplicables para el desarrollo de cualquier edificación.</p>
+      <div class="col-md text-center py-4">
+        <i class="iconos-presentacion bg-primary text-white mb-2 fas fa-tasks"></i>
+        <p class="h4">Objetivo profesional</p>
+        <p>Desempeñarme como profesionista a través de la experiencia y aprendizaje adquiridos, para desarrollar proyectos de obra múltiples, cumplir con mis responsabilidades.</p>
       </div>
-      <img src="/img/professional.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h3 class="h2">Formación Académica</h3>
+      <div class="row mt-3">
+        <div class="col-sm">
+          
+        </div>
+      </div>
+  </div>
+
+  <div class="container mt-5">
+    <h3 class="h2">Contáctame</h3>
+      <div class="row mt-3">
+        <div class="col-md mt-2">
+          <i class="iconos-redes fab fa-whatsapp align-middle"></i> <span class="align-middle">56 2100 4417</span>
+        </div>
+        <div class="col-md mt-2">
+          <i class="iconos-redes fas fa-envelope align-middle"></i> <span class="align-middle">rodrytorress@hotmail.com</span>
+        </div>
+        <div class="col-md mt-2">
+          <i class="iconos-redes fab fa-facebook align-middle"></i> <span class="align-middle">Rodrigo Torres Mendoza</span>
+        </div>
+      </div>
   </div>
 
 
-  <div class="scholarship">
-
-  </div>
-
-
-  <div class="works">
-
-  </div>
 
 
 
 
 
 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
