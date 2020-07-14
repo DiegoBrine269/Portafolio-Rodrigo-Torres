@@ -342,3 +342,18 @@ color: white;
   border: 1px solid gray;
   border-radius: 10px;
 }
+
+@media (min-width: 768px) {
+  .grid-row 
+  {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }  
+}
+
+@media (min-width: 992px) {
+  .grid-row 
+  {
+    grid-template-columns: 33% 33% 33%;
+  }  
+}

@@ -25,11 +25,18 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+
 </head>
 
 <body>
 
   <!-- Add your site or application content here -->
+
+  <script src="js/wow.min.js"></script>
+	<script>
+	  new WOW().init();
+  </script>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <a class="navbar-brand" href="index.html">Rodrigo Torres Mendoza</a>
@@ -37,7 +44,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+      <div class="navbar-nav text-right">
         <a class="nav-item nav-link active" href="index.html">Presentación <span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link" href="#form-académica">Formación Académica</a>
         <a class="nav-item nav-link" href="#proyectos">Mis Proyectos</a>
@@ -58,20 +65,20 @@
     <h3 class="h2">Sobre mí</h3>
     <div class="row mt-4">
       <div class="col-md text-center py-4">
-        <i class="iconos-presentacion bg-primary text-white mb-2 far fa-building"></i>
+        <i class="iconos-presentacion bg-primary text-white mb-2 far fa-building animate__animated animate__fadeIn wow"></i>
         <p class="h4">Supervisor de obra</p>
         <p>Soy supervisor de obra en interiores y exteriores, enfocado en la planeación, estudio, análisis, remodelación, edificación e interpretación de proyectos. </p>
       </div>
 
       <div class="col-md text-center py-4">
-        <i class="iconos-presentacion bg-primary text-white mb-2 fas fa-star"></i>
+        <i class="iconos-presentacion bg-primary text-white mb-2 fas fa-star animate__animated animate__fadeIn wow"></i>
         <p class="h4">Experiencia</p>
         <p>Tengo 4 años de experiencia dando seguimiento y control de obras del sector privado.</p>
       </div>
       
 
       <div class="col-md text-center py-4">
-        <i class="iconos-presentacion bg-primary text-white mb-2 fas fa-tasks"></i>
+        <i class="iconos-presentacion bg-primary text-white mb-2 fas fa-tasks animate__animated animate__fadeIn wow"></i>
         <p class="h4">Objetivo profesional</p>
         <p>Desempeñarme como profesionista a través de la experiencia y aprendizaje adquiridos, para desarrollar proyectos de obra múltiples, cumplir con mis responsabilidades.</p>
       </div>
@@ -97,9 +104,9 @@
 
   <div id="proyectos" class="container mt-5">
     <h3 class="h2">Proyectos</h3>
-    <div class="row">
-      <div class="col-md  mt-3">
-        <div class="card" style="width: 18rem; margin: 0 auto;">
+    <div class="grid-row">
+      <div class="col-md  mt-4">
+        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="0.2s" style="width: 18rem; margin: 0 auto;">
           <img src="img/skyline-1925943_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Proyecto 1</h5>
@@ -109,8 +116,8 @@
         </div>
       </div>
 
-      <div class="col-md  mt-3">
-        <div class="card" style="width: 18rem; margin: 0 auto;">
+      <div class="col-md  mt-4">
+        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="0.8s" style="width: 18rem; margin: 0 auto;">
           <img src="img/skyline-1925943_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Proyecto 2</h5>
@@ -120,22 +127,48 @@
         </div>
       </div>
 
-      <div class="col-md  mt-3">
-        <div class="card" style="width: 18rem; margin: 0 auto;">
+      <div class="col-md  mt-4">
+        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="1.4s" style="width: 18rem; margin: 0 auto;">
           <img src="img/skyline-1925943_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Proyecto 2</h5>
+            <h5 class="card-title">Proyecto 3</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
     </div> 
+
+    <div class="grid-row">
+      <div class="col-md  mt-4">
+        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="2s" style="width: 18rem; margin: 0 auto;">
+          <img src="img/skyline-1925943_1920.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md  mt-4">
+        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="2.6s" style="width: 18rem; margin: 0 auto;">
+          <img src="img/skyline-1925943_1920.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 2</h5>
+            <p class="card-text">Some quick example text to build on the Proyecto 2 and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      
+    </div> 
   </div>
 
   <hr>
 
-  <div class="container mt-5">
+  <div class="container mt-5 pb-5">
     <h3 class="h2">Contáctame</h3>
       <div class="row mt-3">
         <div class="col-md mt-2">
@@ -156,7 +189,9 @@
 
 
 
+  
 
+	
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -164,6 +199,18 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+  <script>  
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+              });
+          });
+    });
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
