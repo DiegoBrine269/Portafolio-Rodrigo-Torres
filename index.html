@@ -38,6 +38,21 @@
 	  new WOW().init();
   </script>
 
+  <script> 
+    let ancho = document.body.clientWidth;
+
+    if(ancho < 768)
+    {
+      let card = document.querySelectorAll(".card");
+
+
+      card.forEach(element => {
+        element.setAttribute("data-wow-delay", "0.2");
+      });
+    }
+      
+  </script>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <a class="navbar-brand" href="index.html">Rodrigo Torres Mendoza</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,20 +80,20 @@
     <h3 class="h2">Sobre mí</h3>
     <div class="row mt-4">
       <div class="col-md text-center py-4">
-        <i class="iconos-presentacion bg-primary text-white mb-2 far fa-building animate__animated animate__fadeIn wow"></i>
+        <i class="iconos-presentacion bg-primary text-white mb-2 far fa-building animate__animated animate__fadeIn wow" data-wow-delay="0.5s"></i>
         <p class="h4">Supervisor de obra</p>
         <p>Soy supervisor de obra en interiores y exteriores, enfocado en la planeación, estudio, análisis, remodelación, edificación e interpretación de proyectos. </p>
       </div>
 
       <div class="col-md text-center py-4">
-        <i class="iconos-presentacion bg-primary text-white mb-2 fas fa-star animate__animated animate__fadeIn wow"></i>
+        <i class="iconos-presentacion bg-primary text-white mb-2 fas fa-star animate__animated animate__fadeIn wow" data-wow-delay="0.5s"></i>
         <p class="h4">Experiencia</p>
         <p>Tengo 4 años de experiencia dando seguimiento y control de obras del sector privado.</p>
       </div>
       
 
       <div class="col-md text-center py-4">
-        <i class="iconos-presentacion bg-primary text-white mb-2 fas fa-tasks animate__animated animate__fadeIn wow"></i>
+        <i class="iconos-presentacion bg-primary text-white mb-2 fas fa-tasks animate__animated animate__fadeIn wow" data-wow-delay="0.5s"></i>
         <p class="h4">Objetivo profesional</p>
         <p>Desempeñarme como profesionista a través de la experiencia y aprendizaje adquiridos, para desarrollar proyectos de obra múltiples, cumplir con mis responsabilidades.</p>
       </div>
@@ -106,7 +121,7 @@
     <h3 class="h2">Proyectos</h3>
     <div class="grid-row">
       <div class="col-md  mt-4">
-        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="0.2s" style="width: 18rem; margin: 0 auto;">
+        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="2s" style="width: 100%; margin: 0 auto;">
           <img src="img/skyline-1925943_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Proyecto 1</h5>
@@ -117,7 +132,7 @@
       </div>
 
       <div class="col-md  mt-4">
-        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="0.8s" style="width: 18rem; margin: 0 auto;">
+        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="2s" style="width: 100%; margin: 0 auto;">
           <img src="img/skyline-1925943_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Proyecto 2</h5>
@@ -128,7 +143,7 @@
       </div>
 
       <div class="col-md  mt-4">
-        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="1.4s" style="width: 18rem; margin: 0 auto;">
+        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="2s" style="width: 100%; margin: 0 auto;">
           <img src="img/skyline-1925943_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Proyecto 3</h5>
@@ -141,10 +156,10 @@
 
     <div class="grid-row">
       <div class="col-md  mt-4">
-        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="2s" style="width: 18rem; margin: 0 auto;">
+        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="2s" style="width: 100%; margin: 0 auto;">
           <img src="img/skyline-1925943_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Proyecto 1</h5>
+            <h5 class="card-title">Proyecto 4</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
@@ -152,10 +167,10 @@
       </div>
 
       <div class="col-md  mt-4">
-        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="2.6s" style="width: 18rem; margin: 0 auto;">
+        <div class="card animate__animated animate__fadeInRight wow" data-wow-delay="2s" style="width: 100%; margin: 0 auto;">
           <img src="img/skyline-1925943_1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Proyecto 2</h5>
+            <h5 class="card-title">Proyecto 5</h5>
             <p class="card-text">Some quick example text to build on the Proyecto 2 and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
