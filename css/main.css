@@ -357,3 +357,19 @@ color: white;
     grid-template-columns: 33% 33% 33%;
   }  
 }
+
+.img-carousel{
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .img-carousel{
+    height: 600px;
+  } 
+}
+
+@media (min-width: 992px) {
+  .img-carousel{
+    height: 750px;
+  } 
+}
